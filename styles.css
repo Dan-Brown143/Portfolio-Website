@@ -327,6 +327,22 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem);}
     font-family: var(--font-display);
 }
 
+.year-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    font-family: var(--font-display);
+}
+
+.project-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    font-family: var(--font-display);
+}
+
 .stat-label {
     display: block;
     font-size: 0.875rem;
@@ -370,7 +386,7 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem);}
 .project-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .project-placeholder {

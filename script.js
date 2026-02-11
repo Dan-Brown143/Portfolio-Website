@@ -99,7 +99,15 @@ window.addEventListener('scroll', highlightNavigation);
 const footer = document.querySelector('.footer p');
 if (footer) {
     const currentYear = new Date().getFullYear();
-    footer.innerHTML = footer.innerHTML.replace('2026', currentYear)
+    footer.innerHTML = footer.innerHTML.replace('2024', currentYear)
+}
+
+// Dynamic Year in About
+const yearTracker = document.querySelector('.year-number');
+if (yearTracker) {
+    const currentYear = new Date().getFullYear();
+    const currentVal = currentYear - 2022;
+    yearTracker.innerHTML = yearTracker.innerHTML.replace('3', currentVal)
 }
 
 //Parallax Effect for hero background
