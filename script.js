@@ -60,7 +60,7 @@ document.querySelectorAll('section').forEach(section => {
 });
 
 //Also observe individual project cards for staggered animation
-const projectCards = document.querySelectorAll('.project-car');
+const projectCards = document.querySelectorAll('.project-card');
 projectCards.forEach((card, index) => {
     card.style.opacity = '0';
     card.style.transform = 'translateY(30px)';
@@ -103,11 +103,24 @@ if (footer) {
 }
 
 // Dynamic Year in About
+
 const yearTracker = document.querySelector('.year-number');
 if (yearTracker) {
     const currentYear = new Date().getFullYear();
     const currentVal = currentYear - 2022;
     yearTracker.innerHTML = yearTracker.innerHTML.replace('3', currentVal)
+}
+
+//Dynamic Projects Completed in about
+
+
+let cardNum = 0
+projectCards.forEach((card, index) => {
+    cardNum += 1;
+})
+const projectTracker = document.querySelector('.project-number');
+if (projectTracker) {
+    projectTracker.innerHTML = projectTracker.innerHTML.replace('0', cardNum)
 }
 
 //Parallax Effect for hero background
