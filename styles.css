@@ -305,7 +305,7 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem);}
 }
 
 .btn-cv {
-    background: var(--accent);
+    background: var(--primary);
     color: var(--text-light);
     box-shadow: 0 4px 115px rgba(0, 78, 137, 0.3);
     display: inline-flex;
@@ -314,7 +314,7 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem);}
 }
 
 .btn-cv:hover {
-    background: var(--accent-light);
+    background: var(--primary-dark);
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(0, 78, 137, 0.4);
 }
