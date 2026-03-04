@@ -107,7 +107,7 @@ if (footer) {
 const yearTracker = document.querySelector('.year-number');
 if (yearTracker) {
     const currentYear = new Date().getFullYear();
-    const currentVal = currentYear - 2022;
+    const currentVal = currentYear - 2024;
     yearTracker.innerHTML = yearTracker.innerHTML.replace('3', currentVal)
 }
 
